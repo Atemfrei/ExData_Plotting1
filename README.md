@@ -6,7 +6,7 @@ Read a dataset about household power consumptions and create exploratory graphic
 This repository includes 
 
 * 4 R scripts, whereas each script creates a different plot
-* 4 PNG output files. NOTE: The weekdays are in German (Do, Fr, Sa)
+* 4 PNG output files.
 
 ### About the R Scripts
 The creation of the plots is based on a small dataset called `hpc_subset.csv`. This dataset is a subset of the original dataset `household_power_consumption.txt` and is created automatically as soon as one of the scripts is executed for the first time. 
