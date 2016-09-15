@@ -1,4 +1,34 @@
-## Introduction
+## Programming Assignment for Coursera Course *Exploratory Data Analysis*
+
+Read a dataset about household power consumptions and create exploratory graphics
+
+### Contents
+This repository includes 
+
+* 4 R scripts, whereas each script creates a different plot
+* 4 PNG flies which are the output files of the 4 different R scripts
+
+### About the R Scripts
+The creation of the plots is based on a small dataset called `hpc_subset.csv`. This dataset is a subset of the original dataset `household_power_consumption.txt` and is created automatically as soon as one of the scripts is executed for the first time. 
+
+
+Therefore every R script has a section called `Data Handling` in the beginning of the file. in this section the original dataset is loaded, transformed and written to a new data file. 
+The steps are the following:
+
+1. Read in the original dataset `household_power_consumption.txt`.
+2. Create a new variable called `DateTime` in POSIXct format.
+3. Select data only from the dates 2007-02-01 and 2007-02-02.
+4. Reorder variables and write the smaller dataset to a new file called `hpc_subset.csv`. 
+
+For further information look into the R scripts where every step is commented in detail.
+
+### Note on the use of the R Scrips
+In order to be able to execute the R Scripts the original dataset `household_power_consumption.txt` must be located inside the folder `/data` within the project directory.
+
+
+
+
+### Given Instructions for this Assignment
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
@@ -33,7 +63,7 @@ web site</a>:
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
-## Loading the data
+### Loading the data
 
 
 
@@ -58,7 +88,7 @@ functions.
 * Note that in this dataset missing values are coded as `?`.
 
 
-## Making Plots
+### Making Plots
 
 Our overall goal here is simply to examine how household energy usage
 varies over a 2-day period in February, 2007. Your task is to
@@ -92,23 +122,23 @@ date. There should be four PNG files and four R code files.
 The four plots that you will need to construct are shown below. 
 
 
-### Plot 1
+#### Plot 1
 
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
-### Plot 2
+#### Plot 2
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 
-### Plot 3
+#### Plot 3
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 
-### Plot 4
+#### Plot 4
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
